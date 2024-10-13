@@ -86,6 +86,9 @@ nav a::after {
     transition: width 0.3s ease;  /* Smooth animation for the width */
 }
 
+nav a:hover::after {
+    width: 100%; /* Expanding underline on hover */
+}
 
 .ana-sayfa-yazi {
     position: absolute;
