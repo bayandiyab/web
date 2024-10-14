@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* you can search for this commands */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+  
+/* selected text bg color */
+::selection {
+    background-color: white;
+}
+
+/* every think well be inside a container */
+.container {
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 48px 24px 300px 24px;
+}
+
+.ana-sayfa {
+    background-image: url('../assets/images/backg.foto.jpg'); /* استبدل هذا بمسار الصورة الخاص بك */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center; /* تحريك الصورة إلى اليمين */
+    height: 100vh;
+    width: 100%;
+    /* what is vw ?? */
+}
+
+.header {
+    padding: 3%; /*عرض*/
+    /* never use a position: absolute in header */
+    /* position: absolute; */
+    /* margin-top: 40px;مسافه من فوق */
+    /* width: 70%;  */
+    /* top: 0; */
+    backdrop-filter: blur(10px);/*ضباب*/
+    box-shadow: 9px 0px 30px rgb(168, 168, 23);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+}
+
+nav {
+    /* most be width and height in navber */
+    width: 100%;
+    height: 80px;
+    display: flex; /* ترتيب عناصر ب شكل افقي */
+    gap: 40px; /* هلق هي مسافه بين عناصر */
+    /* to center a items */
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none; /*  ا بيشيل الخط من راوبط*/
+    font-weight: 500; /*  نص بيوضح اكتر*/
+    position: relative; /* Needed for hover underline effect */
+}
+
+/* Added hover underline effect */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -4px; /* Position just below the text */
+    left: 0;
+    transition: width 0.3s ease;  /* Smooth animation for the width */
+}
+
+nav a:hover::after {
+    width: 100%; /* Expanding underline on hover */
+}
+
+.ana-sayfa-yazi {
+    position: absolute;
+    left: 210px; /* المسافة من الجانب الأيسر */
+    color: aliceblue;
+    border: solid 2px aliceblue; 
+    padding: 15px; /* مساحه داخليه*/
+    margin: 90px; /* خارجي */
+    text-align: left; 
+    font-size: 24px; 
+    background-color: rgba(0, 0, 0, 0.5); /* لون اسود للخلف*/
+    border-radius: 10px; 
+}
+
+.ana-sayfa-yazi p {
+    margin: 0; /* Paragrafların dış boşluğu kaldırıldı */
+    line-height: 1.5; /* Satır yüksekliği ayarlandı */
+}
