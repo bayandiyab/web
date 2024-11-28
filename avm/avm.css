@@ -20,14 +20,15 @@ html {
     margin-right: auto;
     padding: 48px 24px 300px 24px;
 }
+
 .ana-sayfa {
-    background: url('../assets/images/صور اوتيل/back.jpg') ;
+    background: url('../assets/images/carsiback.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center; /* تحريك الصورة إلى اليمين */
     height: 100vh;
     width: 100%;
-}
+}   
 /* Header settings */
 .header {
     padding: 3%; /* Padding around the header */
@@ -77,19 +78,19 @@ nav a:hover::after {
 }
 .image-section {
     padding: 50px 20px; /* مسافة حول الصور */
-    background-color: #926565; /* لون خلفية ناعم */
+    background-color: #a4a5f375; /* لون خلفية ناعم */
 }
-
 .image-gallery {
-   /*padding:100px;/*جربي شيليه**/
+    padding: 10px;
     display: flex; /* لتوزيع الصور بشكل أفقي */
     justify-content:left; /* تمركز الصور في الوسط */
     align-items: center; /* محاذاة الصور عمودياً */
-    gap: 20px; /* مسافة بين الصور */
+    gap: 25px; /* مسافة بين الصور */
     flex-wrap: wrap; /* يسمح بالانتقال لسطر جديد إذا لم تكفي المساحة */
 }
 
 .image-gallery img {
+    margin-top: 30px;
     width: 50%; /* حجم الصورة (عرض نسبي للشاشة) */
     max-width: 600px; /* أقصى عرض للصورة */
     height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
@@ -108,13 +109,15 @@ nav a:hover::after {
 
 .text p {
     font-size: x-large; 
-    color: #000000; 
-    line-height: 2.0; 
+    text-align:left; 
+    color: #333; 
+    line-height: 1.6; 
     position: relative; 
-    top: -10px; /* رفع النص للأعلى */
+    top: 10px; /* رفع النص للأعلى */
 }
 .image-gallery2 {
-  
+    padding: 60px;
+    margin-left: 80px;
     display: flex; /* لتوزيع العناصر بشكل أفقي */
     justify-content: flex-start; /* محاذاة العناصر في البداية */
     align-items: center; /* محاذاة العناصر عموديًا */
@@ -123,8 +126,7 @@ nav a:hover::after {
 }
 
 .image-gallery2 img {
-    margin-top: 40px;
-    margin-left: 700px; /* مسافة بين الصورة والنص */
+    margin-left: 600px; /* مسافة بين الصورة والنص */
     width: 52%; /* حجم الصورة */
     max-width: 600px;
     height: auto;
@@ -137,14 +139,13 @@ nav a:hover::after {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
 }
 .text2 p {
-    
-    margin-right:10px;
-    margin-top: -400px;
+    margin-top: -470px;
     font-size: x-large;
-    line-height: 2.1;
+    line-height: 1.6;
+    margin-left: -135px;
 }
 .image-gallery3 {
-    margin-top: 25px;
+    padding: 10px;
     display: flex; /* لتوزيع العناصر بشكل أفقي */
     justify-content: flex-start; /* محاذاة العناصر في البداية */
     align-items: center; /* محاذاة العناصر عموديًا */
@@ -166,14 +167,13 @@ nav a:hover::after {
 }
 .text3 p{
     padding: 30px;
-    margin-top: -440px;
+    margin-top: -450px;
     font-size: x-large;
     line-height: 1.6;
     margin-left: 600px;
 }
 .image-gallery4{
-    margin-top: 70px;
-    margin-left: 80px;
+    padding: 60px;
     display: flex; /* لتوزيع العناصر بشكل أفقي */
     justify-content: flex-start; /* محاذاة العناصر في البداية */
     align-items: center; /* محاذاة العناصر عموديًا */
@@ -181,7 +181,7 @@ nav a:hover::after {
     flex-wrap: wrap; /* السماح للانتقال لسطر جديد إذا كانت المسافة ضيقة */
 }
 .image-gallery4 img {
-    margin-left: 620px; /* مسافة بين الصورة والنص */
+    margin-left: 650px; /* مسافة بين الصورة والنص */
     width: 52%; /* حجم الصورة */
     max-width: 600px;
     margin-top: -50px;
@@ -195,14 +195,14 @@ nav a:hover::after {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
 }
 .text4 p{
-    margin-right:-10px;
-    margin-left: -70px;
-    margin-top: -365px;
+    padding: 100px;
+    margin-top: -450px;
     font-size: x-large;
-    line-height: 2.1;
+    line-height: 1.7;
+    margin-left: -150px;
 }
 .image-gallery5{
-
+    padding: 3px;
     display: flex; /* لتوزيع العناصر بشكل أفقي */
     justify-content: flex-start; /* محاذاة العناصر في البداية */
     align-items: center; /* محاذاة العناصر عموديًا */
@@ -213,8 +213,8 @@ nav a:hover::after {
     margin-right: 600px; /* مسافة بين الصورة والنص */
     width: 52%; /* حجم الصورة */
     max-width: 600px;
+    margin-top: -50px;
     height: auto;
-    margin-top: 50px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير الظل */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -225,13 +225,13 @@ nav a:hover::after {
 }
 .text5 p{
     padding: 30px;
-    margin-top: -440px;
+    margin-top: -490px;
     font-size: x-large;
-    line-height: 2.0;
+    line-height: 1.6;
     margin-left: 600px;
 }
 .image-gallery6 {
-  
+    margin-left: 55px;
     display: flex; /* لتوزيع العناصر بشكل أفقي */
     justify-content: flex-start; /* محاذاة العناصر في البداية */
     align-items: center; /* محاذاة العناصر عموديًا */
@@ -240,10 +240,10 @@ nav a:hover::after {
 }
 
 .image-gallery6 img {
-    margin-top: 40px;
-    margin-left: 710px; /* مسافة بين الصورة والنص */
+    margin-top: 50px;
+    margin-left: 600px; /* مسافة بين الصورة والنص */
     width: 52%; /* حجم الصورة */
-    max-width: 600px;
+    max-width: 650px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير الظل */
@@ -254,11 +254,9 @@ nav a:hover::after {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
 }
 .text6 p{
-    margin-right:10px;
-    margin-top: -410px;
+    padding: 100px;
+    margin-top: -470px;
     font-size: x-large;
-    line-height: 2.1;
-}
-.isim h1{
-    text-align: center;
+    line-height: 1.7;
+    margin-left: -150px;
 }

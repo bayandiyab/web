@@ -107,3 +107,7 @@ nav a:hover::after {
     margin: 0; /* Paragrafların dış boşluğu kaldırıldı */
     line-height: 1.5; /* Satır yüksekliği ayarlandı */
 }
+.ana-sayfa-yazi:hover{
+    transform: scale(1.05); /* تكبير الصورة عند المرور */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
+}

@@ -77,3 +77,128 @@ nav a::after {
 nav a:hover::after {
     width: 100%; /* Expanding underline on hover */
 }
+.image-section {
+    padding: 50px 20px; /* مسافة حول الصور */
+    background-color: #ffffff; /* لون خلفية ناعم */
+}
+.image-gallery {
+    padding:10px;
+    display: flex; /* لتوزيع الصور بشكل أفقي */
+    justify-content:left; /* تمركز الصور في الوسط */
+    align-items: center; /* محاذاة الصور عمودياً */
+    gap: 20px; /* مسافة بين الصور */
+    flex-wrap: wrap; /* يسمح بالانتقال لسطر جديد إذا لم تكفي المساحة */
+}
+
+.image-gallery img {
+    margin-top: 100px;
+    width: 50%; /* حجم الصورة (عرض نسبي للشاشة) */
+    max-width: 600px; /* أقصى عرض للصورة */
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 15px; /* زوايا مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف للصورة */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثيرات عند التفاعل */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند المرور */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
+}
+.text {
+    flex: 1; /* النص يأخذ المساحة المتبقية */
+}
+
+.text p {
+    margin-left: 5px;
+    font-size: x-large; 
+    color: #333; 
+    line-height: 1.6; 
+    position: relative; 
+    top: 50px; /* رفع النص للأعلى */
+}
+.image-gallery2 {
+    padding: 60px;
+    display: flex; /* لتوزيع العناصر بشكل أفقي */
+    justify-content: flex-start; /* محاذاة العناصر في البداية */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    gap: 20px; /* المسافة بين العناصر */
+    flex-wrap: wrap; /* السماح للانتقال لسطر جديد إذا كانت المسافة ضيقة */
+}
+
+.image-gallery2 img {
+    margin-left: 600px; /* مسافة بين الصورة والنص */
+    width: 52%; /* حجم الصورة */
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-gallery2 img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند المرور */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
+}
+.text2 p {
+    padding: 30px;
+    margin-top: -425px;
+    font-size: x-large;
+    line-height: 2.5;
+}
+.image-gallery3 {
+    padding: 60px;
+    margin-top: -55px;
+    display: flex; /* لتوزيع العناصر بشكل أفقي */
+    justify-content: flex-start; /* محاذاة العناصر في البداية */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    gap: 20px; /* المسافة بين العناصر */
+    flex-wrap: wrap; /* السماح للانتقال لسطر جديد إذا كانت المسافة ضيقة */
+}
+.image-gallery3 img {
+    margin-right: 600px; /* مسافة بين الصورة والنص */
+    width: 60%; /* حجم الصورة */
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-gallery3 img:hover{
+    transform: scale(1.05); /* تكبير الصورة عند المرور */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
+}
+.text3 p{
+    padding: 30px;
+    margin-top: -350px;
+    font-size: x-large;
+    line-height: 2.5;
+    margin-left: 600px;
+}
+.image-gallery4{
+    padding: 60px;
+    display: flex; /* لتوزيع العناصر بشكل أفقي */
+    justify-content: flex-start; /* محاذاة العناصر في البداية */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    gap: 20px; /* المسافة بين العناصر */
+    flex-wrap: wrap; /* السماح للانتقال لسطر جديد إذا كانت المسافة ضيقة */
+}
+.image-gallery4 img {
+    margin-left: 600px; /* مسافة بين الصورة والنص */
+    width: 52%; /* حجم الصورة */
+    max-width: 600px;
+    margin-top: -50px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-gallery4 img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند المرور */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التفاعل */
+}
+.text4 p{
+    padding: 30px;
+    margin-top: -400px;
+    font-size: x-large;
+    line-height: 2.5;
+    margin-right: 5px;
+}
